@@ -1,0 +1,9 @@
+@import "../../scss/variables.scss";
+
+.navbar {
+  &__container {
+    padding: 36px 0px;
+    max-width: $containerExtraLarge;
+    margin: 0 auto;
+  }
+}

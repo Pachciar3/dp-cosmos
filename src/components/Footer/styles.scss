@@ -1,0 +1,19 @@
+@import "../../scss/variables.scss";
+
+.footer {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 24px 0px;
+    max-width: $containerExtraLarge;
+  }
+  &__text {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    font-style: normal;
+    color: #8d7fbc;
+  }
+}

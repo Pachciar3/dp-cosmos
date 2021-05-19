@@ -1,0 +1,6 @@
+@import "scss/variables.scss";
+body {
+  background-color: $backgroundColor;
+  font-family: $fontPrimary;
+  color: $primaryTextColor;
+}
