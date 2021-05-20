@@ -1,13 +1,15 @@
 import React from 'react';
 
+import Links from '../../components/Links';
+import Rocket from '../../components/Rocket';
 import './styles.scss';
 
 function Main() {
   return (
     <main className="main">
       <div className="main__container">
-        <div>Links</div>
-        <div>Rocket</div>
+        <Links />
+        <Rocket />
       </div>
     </main>
   );
