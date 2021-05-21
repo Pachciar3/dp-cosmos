@@ -17,6 +17,13 @@ function App() {
         <Main />
         <Footer />
       </Router>
+      <span className="background-dot background-dot--1"></span>
+      <span className="background-dot background-dot--2"></span>
+      <span className="background-dot background-dot--3"></span>
+      <span className="background-dot background-dot--4"></span>
+      <span className="background-circle background-circle--1"></span>
+      <span className="background-circle background-circle--2"></span>
+      <span className="background-circle background-circle--3"></span>
     </div>
   );
 }

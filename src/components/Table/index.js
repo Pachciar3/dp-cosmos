@@ -7,8 +7,6 @@ import TableLine from './TableLine';
 import TableCell from './TableCell';
 import './styles.scss';
 
-
-
 function Table({ fetchRequested, objects, columns, requestPath, isLoading, isError }) {
   const SORT_TYPES = { [columns[0].value]: "none", [columns[1].value]: "none" }
 

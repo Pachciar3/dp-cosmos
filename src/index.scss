@@ -1,6 +1,71 @@
 @import "scss/variables.scss";
+
+@mixin backgroundDot($top, $left, $color) {
+  top: $top;
+  left: $left;
+  background: $color;
+}
+
+// .sidebar {
+//   @include rtl(float, left, right);
+// }
+
 body {
   background-color: $backgroundColor;
   font-family: $fontPrimary;
   color: $primaryTextColor;
+  position: relative;
+  overflow-x: hidden;
+  & .background-dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+  }
+  & .background-dot--1 {
+    @include backgroundDot(144px, 81px, #e34a67);
+  }
+  & .background-dot--2 {
+    @include backgroundDot(84px, 875px, #00c9b7);
+  }
+  & .background-dot--3 {
+    @include backgroundDot(552px, 1259px, #e34a67);
+  }
+  & .background-dot--4 {
+    @include backgroundDot(652px, 660px, #7860d7);
+  }
+  & .background-dot--5 {
+    @include backgroundDot(500px, 297px, #00c9b7);
+  }
+  & .background-circle {
+    position: absolute;
+    width: 346px;
+    height: 346px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #2b2347 0%, #221b3a 100%);
+    z-index: -1;
+    &::before {
+      content: "";
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      width: 246px;
+      height: 246px;
+      background-color: $backgroundColor;
+    }
+  }
+  & .background-circle--1 {
+    top: -26.82%;
+    left: 33.61%;
+  }
+  & .background-circle--2 {
+    top: 14.06%;
+    left: 86.32%;
+  }
+  & .background-circle--3 {
+    top: 41.93%;
+    left: -12.29%;
+  }
 }
