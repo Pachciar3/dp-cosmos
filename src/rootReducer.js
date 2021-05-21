@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
-// import categoriesReducer from "./components/MainNav/redux";
+import flyingObjectsReducer from "./components/Table/redux";
 
 const rootReducer = combineReducers({
-  // categories: categoriesReducer,
+  flyingObjectsReducer: flyingObjectsReducer,
 });
 
 export default rootReducer;

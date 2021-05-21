@@ -9,7 +9,7 @@
   thead {
     padding: 16px 0px;
   }
-  tbody {
+  &__content {
     height: 212px;
     overflow-y: scroll;
     &::-webkit-scrollbar {
@@ -30,10 +30,6 @@
       background: $tableHeaderButtonColor;
     }
   }
-  &__lines {
-    margin-top: -14px;
-    margin-bottom: calc(52px - 14px);
-  }
   &__gradient {
     width: calc(100% - 4px);
     height: 52px;
@@ -47,6 +43,9 @@
     display: flex;
     width: 100%;
     justify-content: stretch;
+    &:first-of-type {
+      margin-top: -14px;
+    }
   }
   &__head {
     width: 100%;

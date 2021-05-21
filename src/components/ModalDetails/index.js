@@ -5,14 +5,14 @@ import Backdrop from '../Backdrop';
 import Table from '../Table';
 import './styles.scss';
 
-function ModalDetails({ open, handleClose, title }) {
+function ModalDetails({ open, handleClose, title, columns, requestPath }) {
   return (
     open && (
       <>
         <Backdrop handleClose={handleClose} />
         <div className="modal-details">
           <ModalHeader handleClose={handleClose} title={title} />
-          <Table />
+          <Table columns={columns} requestPath={requestPath} />
         </div>
       </>
     )
