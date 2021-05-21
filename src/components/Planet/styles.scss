@@ -1,0 +1,16 @@
+.planet {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0px 0px 81px 0px;
+  &__container {
+    position: relative;
+  }
+  &__image {
+    padding-bottom: 24px;
+    width: 375px;
+  }
+  &__action {
+    text-align: center;
+  }
+}

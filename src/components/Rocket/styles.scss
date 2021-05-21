@@ -1,13 +1,108 @@
 .rocket {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 0px 0px 81px 0px;
-  &__planet {
-    padding-bottom: 24px;
-    width: 375px;
+  position: absolute;
+  bottom: 304px;
+  left: 135px;
+  z-index: 100;
+  &__image {
+    transform: translate(0, 0);
   }
-  &__action {
-    text-align: center;
+  &__landing {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    z-index: -10;
+  }
+  &__smoke-left {
+    position: absolute;
+    left: -48px;
+    bottom: -4px;
+    z-index: -20;
+    opacity: 0;
+  }
+  &__smoke-right {
+    position: absolute;
+    right: -35px;
+    bottom: -5px;
+    z-index: -20;
+    opacity: 0;
+  }
+  &.start-animation {
+    .rocket__image {
+      animation: rocket 10s linear both;
+    }
+    .rocket__smoke-left {
+      animation: smoke-left-animation 3s linear;
+    }
+    .rocket__smoke-right {
+      animation: smoke-right-animation 3s linear;
+    }
+  }
+}
+
+@keyframes rocket {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(0px, -1500px);
+    opacity: 1;
+  }
+  51% {
+    transform: translate(0px, -1500px);
+    opacity: 0;
+  }
+  54% {
+    transform: translate(0px, -1000px) rotate(-55deg);
+    opacity: 0;
+  }
+  55% {
+    transform: translate(0px, -1000px) rotate(-55deg);
+    opacity: 1;
+  }
+  95% {
+    transform: translate(0px, -100px) rotate(-0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(-0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes smoke-left-animation {
+  0% {
+    opacity: 0;
+    left: -48px;
+    bottom: -4px;
+  }
+  3% {
+    opacity: 1;
+    left: -53px;
+    bottom: -5px;
+  }
+  100% {
+    opacity: 0;
+    left: -100px;
+    bottom: -21px;
+  }
+}
+
+@keyframes smoke-right-animation {
+  0% {
+    opacity: 0;
+    right: -35px;
+    bottom: -5px;
+  }
+  3% {
+    opacity: 1;
+    right: -49px;
+    bottom: -6px;
+  }
+  100% {
+    opacity: 0;
+    right: -90px;
+    bottom: -20px;
   }
 }

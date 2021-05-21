@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Links from '../../components/Links';
-import Rocket from '../../components/Rocket';
+import Planet from '../Planet';
 import './styles.scss';
 
 function Main() {
@@ -9,7 +9,7 @@ function Main() {
     <main className="main">
       <div className="main__container">
         <Links />
-        <Rocket />
+        <Planet />
       </div>
     </main>
   );

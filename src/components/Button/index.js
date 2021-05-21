@@ -2,9 +2,10 @@ import React from 'react';
 
 import './styles.scss';
 
-function Button({ children, handleClick }) {
+function Button({ children, handleClick, disabled }) {
+  const className = `button ${disabled ? "disabled" : ""}`
   return (
-    <button className="button" onClick={handleClick}>
+    <button disabled={disabled} className={className} onClick={handleClick}>
       {children}
     </button>
   );

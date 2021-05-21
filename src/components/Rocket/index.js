@@ -1,15 +1,14 @@
 import React from 'react';
 
-import Button from "../Button";
-// import { Link as LinkTo } from 'react-router-dom';
-
 import './styles.scss';
 
-function Rocket() {
+function Rocket({ start }) {
+  const rocketClassName = `rocket ${start ? "start-animation" : ""}`
   return (
-    <div className="rocket">
-      <div className="rocket__planet"><img src="http://localhost:3000/images/planet.png" alt="Planet" /></div>
-      <div className="rocket__action"><Button>Launch Rocket!</Button></div>
+    <div className={rocketClassName}>
+      <div className="rocket__image"><img src="http://localhost:3000/images/rocket.png" alt="Rocket" /><img className="rocket__landing" src="http://localhost:3000/images/landing_gear.png" alt="Landing Gear" /></div>
+      <img className="rocket__smoke-right" src="http://localhost:3000/images/Smoke_1.png" alt="Smoke" />
+      <img className="rocket__smoke-left" src="http://localhost:3000/images/Smoke_2.png" alt="Smoke" />
     </div>
   );
 }
