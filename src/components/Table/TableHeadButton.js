@@ -14,11 +14,12 @@ function TableHeadButton({ children, handleClick, type }) {
       return <TwoArrowsIcon color="#a094c6" />
     }
   }
+  const iconClassName = `table__head-button__icon ${type === "none" ? "" : "table__head-button__icon--view"}`
   return (
     <th className="table__head">
       <button onClick={handleClick} className="table__head-button">
         <span>{children}</span>
-        <span className="table__head-button__icon">
+        <span className={iconClassName}>
           {iconType()}
         </span>
       </button>

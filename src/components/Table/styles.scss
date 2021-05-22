@@ -1,12 +1,14 @@
 @import "../../scss/variables.scss";
 
 .table {
-  width: 100%;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
   position: relative;
-  padding-top: 16px;
+  &__table-con {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+  }
   thead {
     padding: 16px 0px;
   }
@@ -16,17 +18,14 @@
     &::-webkit-scrollbar {
       width: 4px;
     }
-    /* Track */
     &::-webkit-scrollbar-track {
       background: $scrollBarTrackColor;
     }
 
-    /* Handle */
     &::-webkit-scrollbar-thumb {
       background: $scrollBarThumbColor;
     }
 
-    /* Handle on hover */
     &::-webkit-scrollbar-thumb:hover {
       background: $tableHeaderButtonColor;
     }
@@ -63,7 +62,6 @@
     cursor: pointer;
     padding: 10px 16px;
     text-align: left;
-    //TODO: padding
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -73,6 +71,9 @@
     align-items: center;
     justify-content: space-between;
     &__icon {
+      &--view {
+        opacity: 1;
+      }
       opacity: 0;
       transition: opacity 0.2s linear;
     }
