@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './styles.scss';
-import Logo from '../../assets/Logo.svg'
+import Logo from '../../Logo.svg';
 
 function Navbar() {
   return (

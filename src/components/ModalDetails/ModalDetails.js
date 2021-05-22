@@ -1,8 +1,8 @@
 import React from 'react';
 
 import ModalHeader from './ModalHeader';
-import Backdrop from '../Backdrop';
-import Table from '../Table';
+import Backdrop from '../Backdrop/Backdrop';
+import Table from '../Table/Table';
 import './styles.scss';
 
 function ModalDetails({ open, handleClose, title, columns, requestPath }) {

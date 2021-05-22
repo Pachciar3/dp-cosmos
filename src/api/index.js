@@ -17,7 +17,7 @@ function request(endpoint, method = "GET", data = null) {
     } else {
       throw Error(response.statusText);
     }
-  })
+  });
 }
 
 const get = (endpoint) => {

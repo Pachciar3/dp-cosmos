@@ -13,7 +13,7 @@ function TableList({ data, columns }) {
     )
     );
   } else {
-    return null
+    return null;
   }
 }
 

@@ -6,7 +6,7 @@ import TableLine from './TableLine';
 import TableCell from './TableCell';
 import TableList from './TableList';
 import TableHeader from './TableHeader';
-import Loader from "../Loader";
+import Loader from "../Loader/Loader";
 import './styles.scss';
 
 function Table({ fetchRequested, objects, columns, requestPath, isLoading, isError }) {
@@ -16,11 +16,11 @@ function Table({ fetchRequested, objects, columns, requestPath, isLoading, isErr
     if (!objects[requestPath].length) {
       fetchRequested(requestPath);
     } else {
-      setData(objects[requestPath])
+      setData(objects[requestPath]);
     }
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [objects[requestPath]])
+  }, [objects[requestPath]]);
 
   return (
     <div className="table">
@@ -38,7 +38,7 @@ function Table({ fetchRequested, objects, columns, requestPath, isLoading, isErr
       </table>
       <div className="table__gradient"></div>
     </div>
-  )
+  );
 }
 
 const mapDispatchToProps = dispatch => ({

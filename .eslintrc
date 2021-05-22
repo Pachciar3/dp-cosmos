@@ -1,0 +1,7 @@
+{
+  "extends": "react-app",
+  "rules": {
+    "semi": "warn",
+    "max-len": ["warn", 100]
+  }
+}

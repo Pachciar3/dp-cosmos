@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Links from '../../components/Links';
-import Planet from '../Planet';
+import Links from '../Links/Links';
+import Planet from '../Planet/Planet';
 import './styles.scss';
 
 function Main() {

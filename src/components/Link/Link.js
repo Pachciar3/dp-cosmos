@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import ModalDetails from '../ModalDetails'
+import ModalDetails from '../ModalDetails/ModalDetails';
 import './styles.scss';
 
 function Link({ children, image, imageAlt, columns, requestPath }) {
@@ -21,7 +21,12 @@ function Link({ children, image, imageAlt, columns, requestPath }) {
         <div className="link__details"><span>Details</span></div>
         <div className="link__gradient"></div>
       </button>
-      <ModalDetails columns={columns} requestPath={requestPath} title={children} open={dialogOpen} handleClose={handleCloseDialog} />
+      <ModalDetails
+        columns={columns}
+        requestPath={requestPath}
+        title={children}
+        open={dialogOpen}
+        handleClose={handleCloseDialog} />
     </>
   );
 }

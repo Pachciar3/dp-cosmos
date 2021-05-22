@@ -20,10 +20,12 @@
     }
     &::-webkit-scrollbar-track {
       background: $scrollBarTrackColor;
+      border-radius: 8px;
     }
 
     &::-webkit-scrollbar-thumb {
       background: $scrollBarThumbColor;
+      border-radius: 8px;
     }
 
     &::-webkit-scrollbar-thumb:hover {
@@ -40,6 +42,11 @@
     z-index: 40000;
   }
   &__line {
+    &--head {
+      background-color: $tableHeaderButtonColor;
+      border-radius: 8px;
+    }
+    border-spacing: 0px;
     display: flex;
     width: 100%;
     justify-content: stretch;
@@ -52,6 +59,7 @@
   }
   &__head {
     width: 100%;
+    padding: 0px;
   }
   &__head-button {
     background-color: $tableHeaderButtonColor;
@@ -75,6 +83,7 @@
         opacity: 1;
       }
       opacity: 0;
+      height: 16px;
       transition: opacity 0.2s linear;
     }
     &:hover {
