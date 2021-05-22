@@ -1,8 +1,8 @@
 import React from 'react';
 
-import TwoArrowsIcon from '../../icons/TwoArrows';
-import DownArrowIcon from '../../icons/DownArrow';
-import UpArrowIcon from '../../icons/UpArrow';
+import TwoArrowsIcon from '../../../icons/TwoArrows';
+import DownArrowIcon from '../../../icons/DownArrow';
+import UpArrowIcon from '../../../icons/UpArrow';
 
 function TableHeadButton({ children, handleClick, type }) {
   function iconType() {

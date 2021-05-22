@@ -1,8 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import React from "react";
 
 import Navbar from './components/Navbar/Navbar';
 import Main from './components/Main/Main';
@@ -12,11 +8,9 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Navbar />
-        <Main />
-        <Footer />
-      </Router>
+      <Navbar />
+      <Main />
+      <Footer />
       <span className="background-dot background-dot--1"></span>
       <span className="background-dot background-dot--2"></span>
       <span className="background-dot background-dot--3"></span>

@@ -2,12 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { connect } from "react-redux";
 import { fetchRequested } from "./redux";
 
-import TableLine from './TableLine';
-import TableCell from './TableCell';
-import TableList from './TableList';
-import TableHeader from './TableHeader';
-import Loader from "../Loader/Loader";
-import './styles.scss';
+import TableStructure from "./TableStructure";
 
 function Table({ fetchRequested, objects, columns, requestPath, isLoading, isError }) {
   const [data, setData] = useState(objects[requestPath]);
@@ -23,21 +18,13 @@ function Table({ fetchRequested, objects, columns, requestPath, isLoading, isErr
   }, [objects[requestPath]]);
 
   return (
-    <div className="table">
-      <table className="table__table-con">
-        <TableHeader columns={columns} setData={setData} data={data} />
-        <tbody className="table__content">
-          <TableList data={data} columns={columns} />
-          <TableLine center>
-            <TableCell colSpan="2">
-              {isLoading && <Loader />}
-              {isError && "Sorry we have a problem"}
-            </TableCell>
-          </TableLine>
-        </tbody>
-      </table>
-      <div className="table__gradient"></div>
-    </div>
+    <TableStructure
+      data={data}
+      setData={setData}
+      columns={columns}
+      isLoading={isLoading}
+      isError={isError}
+    />
   );
 }
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import ModalDetails from '../ModalDetails/ModalDetails';
-import './styles.scss';
+import LinkStructure from './LinkStructure';
 
 function Link({ children, image, imageAlt, columns, requestPath }) {
   const [dialogOpen, setDialogOpen] = useState(false);
@@ -13,14 +13,15 @@ function Link({ children, image, imageAlt, columns, requestPath }) {
   function handleCloseDialog() {
     setDialogOpen(false);
   }
+
   return (
     <>
-      <button className="link" onClick={handleOpenDialog}>
-        <img className="link__image" src={image} alt={imageAlt} />
-        <span className="link__text">{children}</span>
-        <div className="link__details"><span>Details</span></div>
-        <div className="link__gradient"></div>
-      </button>
+      <LinkStructure
+        handleOpenDialog={handleOpenDialog}
+        children={children}
+        image={image}
+        imageAlt={imageAlt}
+      />
       <ModalDetails
         columns={columns}
         requestPath={requestPath}

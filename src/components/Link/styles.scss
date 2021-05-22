@@ -9,16 +9,13 @@
   overflow: hidden;
   color: $primaryTextColor;
   cursor: pointer;
-  &:hover &__gradient,
-  &:focus &__gradient {
+  &:hover &__gradient {
     opacity: 0;
   }
-  &:hover &__details,
-  &:focus &__details {
+  &:hover &__details {
     opacity: 1;
   }
-  &:hover &__text,
-  &:focus &__text {
+  &:hover &__text {
     opacity: 0;
   }
   &:active &__details {

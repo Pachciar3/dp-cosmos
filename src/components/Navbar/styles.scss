@@ -2,8 +2,9 @@
 
 .navbar {
   &__container {
-    padding: 36px 0px;
+    padding: 36px 5px;
     max-width: $containerExtraLarge;
     margin: 0 auto;
+    display: flex;
   }
 }
