@@ -1,8 +1,8 @@
 # Usertive - recruitment task
 
-App uses Spacex api
+The application that allows you to check information about Spacex
 
-![Screenshot](https://imgur.com/oGKn6vv)
+![Screenshot](https://imgur.com/oGKn6vv.png)
 
 ##Live
 
