@@ -6,7 +6,7 @@ import TableLine from '../TableLine';
 function TableHeaderStructure({ columns, handleSortButtonClick, sortTypes }) {
   return (
     <thead>
-      <TableLine>
+      <TableLine head>
         <TableHeadButton
           type={sortTypes[columns[0].value]}
           handleClick={() => handleSortButtonClick(columns[0].value)}>
