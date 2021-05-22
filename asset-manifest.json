@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/dp-cosmos/static/css/main.fb170ff0.chunk.css",
+    "main.js": "/dp-cosmos/static/js/main.808951d4.chunk.js",
+    "main.js.map": "/dp-cosmos/static/js/main.808951d4.chunk.js.map",
+    "runtime-main.js": "/dp-cosmos/static/js/runtime-main.432424e6.js",
+    "runtime-main.js.map": "/dp-cosmos/static/js/runtime-main.432424e6.js.map",
+    "static/js/2.667c7932.chunk.js": "/dp-cosmos/static/js/2.667c7932.chunk.js",
+    "static/js/2.667c7932.chunk.js.map": "/dp-cosmos/static/js/2.667c7932.chunk.js.map",
+    "static/js/3.fc79ec82.chunk.js": "/dp-cosmos/static/js/3.fc79ec82.chunk.js",
+    "static/js/3.fc79ec82.chunk.js.map": "/dp-cosmos/static/js/3.fc79ec82.chunk.js.map",
+    "index.html": "/dp-cosmos/index.html",
+    "static/css/main.fb170ff0.chunk.css.map": "/dp-cosmos/static/css/main.fb170ff0.chunk.css.map",
+    "static/js/2.667c7932.chunk.js.LICENSE.txt": "/dp-cosmos/static/js/2.667c7932.chunk.js.LICENSE.txt",
+    "static/media/Logo.d135bb48.svg": "/dp-cosmos/static/media/Logo.d135bb48.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.432424e6.js",
+    "static/js/2.667c7932.chunk.js",
+    "static/css/main.fb170ff0.chunk.css",
+    "static/js/main.808951d4.chunk.js"
+  ]
+}
