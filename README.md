@@ -4,7 +4,7 @@ The application that allows you to check information about Spacex
 
 ![Screenshot](https://imgur.com/oGKn6vv.png)
 
-##Live
+## Live
 
 [https://pachciar3.github.io/dp-cosmos/](https://pachciar3.github.io/dp-cosmos/)
 
