@@ -4,6 +4,8 @@ import Button from "../Button/Button";
 import Rocket from "../Rocket/Rocket";
 import './styles.scss';
 
+const APP_URL = process.env.REACT_APP_URL;
+
 function Planet() {
   const [start, setStart] = useState(false);
 
@@ -18,7 +20,7 @@ function Planet() {
     <div className="planet">
       <div className="planet__container">
         <div className="planet__image">
-          <img src="http://localhost:3000/images/planet.png" alt="Planet" />
+          <img src={`${APP_URL}/images/planet.png`} alt="Planet" />
         </div>
         <Rocket start={start} />
       </div>

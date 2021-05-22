@@ -9,7 +9,7 @@ function Rocket({ start }) {
   return (
     <div className={rocketClassName}>
       <div className="rocket__image">
-        <img src={`${APP_URL}/images/rocket.png`}
+        <img src={`${APP_URL}/images/Rocket.png`}
           alt="Rocket" />
         <img className="rocket__landing" src={`${APP_URL}/images/landing_gear.png`}
           alt="Landing Gear" />
