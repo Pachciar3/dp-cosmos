@@ -13,7 +13,7 @@ The application that allows you to check information about Spacex
 1. Fetch this project
 2. Run `npm install`
 3. Run `code .` and create `.env` file
-4. Write your environment variables based on `.env.example`. Json-server uses port 3000
+4. Write your environment variables based on `.env.example`
 5. Run `npm start`
 
 ## Used technologies
