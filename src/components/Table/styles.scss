@@ -44,6 +44,9 @@
     display: flex;
     width: 100%;
     justify-content: stretch;
+    &--center {
+      text-align: center;
+    }
     &:first-of-type {
       margin-top: -14px;
     }

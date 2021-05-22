@@ -1,8 +1,9 @@
 import React from 'react';
 
-function TableLine({ children }) {
+function TableLine({ children, center }) {
+  const className = `table__line ${center ? "table__line--center" : "table__line"}`
   return (
-    <tr className="table__line">{children}</tr>
+    <tr className={className}>{children}</tr>
   )
 }
 

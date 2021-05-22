@@ -5,6 +5,7 @@ import { fetchRequested } from "./redux";
 import TableHeadButton from './TableHeadButton';
 import TableLine from './TableLine';
 import TableCell from './TableCell';
+import Loader from "../Loader";
 import './styles.scss';
 
 function Table({ fetchRequested, objects, columns, requestPath, isLoading, isError }) {
@@ -20,7 +21,7 @@ function Table({ fetchRequested, objects, columns, requestPath, isLoading, isErr
     }
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [objects])
+  }, [objects[requestPath]])
   function renderList() {
     if (data) {
       return data.map(object => (
@@ -81,10 +82,10 @@ function Table({ fetchRequested, objects, columns, requestPath, isLoading, isErr
         </thead>
         <tbody className="table__content">
           {renderList()}
-          <TableLine>
+          <TableLine center>
             <TableCell colSpan="2">
-              {isLoading && "Loading..."}
-              {isError && "Error"}
+              {isLoading && <Loader />}
+              {isError && "Sorry we have a problem"}
             </TableCell>
           </TableLine>
         </tbody>

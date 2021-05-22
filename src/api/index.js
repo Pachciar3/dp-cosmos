@@ -15,9 +15,9 @@ function request(endpoint, method = "GET", data = null) {
     if (response.ok) {
       return response.json();
     } else {
-      return false;
+      throw Error(response.statusText);
     }
-  });
+  })
 }
 
 const get = (endpoint) => {
