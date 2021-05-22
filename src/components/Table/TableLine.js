@@ -8,4 +8,4 @@ function TableLine({ children, center, head }) {
   );
 }
 
-export default TableLine;
+export default React.memo(TableLine);

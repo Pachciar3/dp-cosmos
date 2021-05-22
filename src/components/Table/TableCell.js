@@ -6,4 +6,4 @@ function TableCell({ children }) {
   );
 }
 
-export default TableCell;
+export default React.memo(TableCell);

@@ -1,4 +1,4 @@
-import api from "./api"
+import api from "./api";
 
 import { put, takeLatest, all } from 'redux-saga/effects';
 
@@ -7,7 +7,7 @@ import { FETCH_OBJECTS_REQUESTED } from './components/Table/redux';
 
 function* fetchObjects({ payload }) {
   try {
-    const object = yield api.get(`/${payload}`)
+    const object = yield api.get(`/${payload}`);
     yield put(fetchSuccess({ object, name: payload }));
   } catch (e) {
     yield put(fetchFailed());
